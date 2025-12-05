@@ -1,0 +1,303 @@
+@font-face {
+    font-family: "Race Space";
+    src: url("fonts/RACESPACEREGULAR.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+  font-family: "Coda";
+  src: url("fonts/Coda-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    background-color: #2D3A50;
+    background-image:url("Background.png");
+    background-repeat: repeat;
+    color: #FCFFED;
+    font-family: "Race Space", sans-serif;
+}
+
+p{
+  font-family: "Coda", sans-serif;
+  font-size: 30px;
+  color: #FCFFED;
+  margin: 0;
+}
+
+h1{
+  font-family: "Race Space", sans-serif;
+  color: #C0F2BB;
+  font-size: 68px;
+  margin: 0;
+}
+
+h2{
+  color:#65A7A7;
+  font-size: 51px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  
+}
+
+
+ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color:#65A7A7;
+  font-size: 30px;
+}
+
+ul li a:hover {
+  color:#C0F2BB;
+}
+
+#Main-Body{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: none;
+  margin-top: 20px;
+}
+
+#About-Me{
+  width: 50%;
+
+}
+
+
+#folders{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 15px;
+}
+
+.folder{
+  width: 86px;
+  height: 82.6px;
+}
+
+/* Window containers */
+#Windows{
+  position: relative;
+  height: 500px;
+}
+
+.window {
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 2;
+  background-color: #FCFFED;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Title bar for windows */
+.window-title-bar {
+  background-color: #FCFFED;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  gap: 8px;
+}
+
+/* Traffic light dots */
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot-red {
+  background-color: #CE8282;
+}
+
+.dot-yellow {
+  background-color: #F8D794;
+}
+
+.dot-green {
+  background-color: #99B397;
+}
+
+/* Photo window content */
+.window-content {
+  padding: 0;
+  width: 357px;
+  height: 287px;
+  border: 15px solid #FCFFED; /* Add this line - adjust thickness as needed */
+  border-top: 0px;
+}
+
+.window-content img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Terminal window specific styles */
+.window-terminal{
+  position: absolute;
+  top: 270px;
+  right:200px;
+  z-index: 2;
+  background-color: #FCFFED;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.terminal {
+  background-color: #1E2A3A;
+}
+
+.terminal-title-bar {
+  background-color: #FCFFED;
+  color: #FCFFED;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  gap: 8px;
+  margin-bottom: 0px;
+}
+
+.terminal-content {
+  background-color: #2D3A50;
+  color: #FFFFFF;
+  font-family: "Coda", sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  width: 357px;
+  height: 252px;
+  box-sizing: border-box;
+  border: 15px solid #FCFFED; /* Add this line - adjust thickness as needed */
+  border-top: 0px;
+
+  
+}
+
+.terminal-text {
+  color: #65A7A7;
+  font-size: 15px;
+  margin: 1px 0;
+}
+
+.terminal-command {
+  color: #C0F2BB;
+  font-size: 15px;
+}
+
+#terminal-title{
+  color:#FCFFED;
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+/*design-work stuff*/
+.design-window {
+  background-color: #FCFFED;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 332px;
+}
+
+#window-container{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  row-gap: 80px;
+  column-gap: 120px;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: fit-content;
+}
+
+.design-content {
+  padding: 0;
+  width: 302px;
+  height: 287px;
+  border: 15px solid #FCFFED;
+  border-top: 0px;
+}
+
+.design-content img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.design-title {
+    font-family: "Race Space", sans-serif;
+    color: #C0F2BB;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.design-title:hover {
+    color:#65A7A7;
+}
+
+.project-description {
+    z-index: 2;
+    background-color: #FCFFED;
+    color: #2D3A50;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+    /* Hide by default */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    
+    /* Smooth animation */
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+}
+
+/* When open, show it */
+.project-description.open {
+    max-height: 500px; /* Adjust based on content */
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.project {
+    position: relative;
+    /* These might help maintain grid structure */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-description {
+    position: absolute;
+    top: calc(100% + 10px); /* 10px below the title */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    width: 332px; /* Match your window width */
+    /* ... rest of your styles */
+}
