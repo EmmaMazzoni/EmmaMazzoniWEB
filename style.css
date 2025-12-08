@@ -283,6 +283,7 @@ ul li a:hover {
     max-height: 500px; /* Adjust based on content */
     opacity: 1;
     margin-top: 10px;
+    color: #2D3A50;
 }
 
 .project {
@@ -300,4 +301,34 @@ ul li a:hover {
     transform: translateX(-50%); /* Center it horizontally */
     width: 332px; /* Match your window width */
     /* ... rest of your styles */
+}
+
+.descript-text{
+  color:#2D3A50;
+  font-size: 20px;
+}
+
+.descript-head{
+  font-size: 35px;
+  text-align: center;
+}
+
+button{
+  background-color: #65A7A7;
+  border: none;
+  font-family:"Race Space", sans-serif;;
+  color: #FCFFED;
+  width: 223px;
+  height: 41px;
+  font-size: 22px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
