@@ -316,7 +316,7 @@ ul li a:hover {
 button{
   background-color: #65A7A7;
   border: none;
-  font-family:"Race Space", sans-serif;;
+  font-family:"Race Space", sans-serif;
   color: #FCFFED;
   width: 223px;
   height: 41px;
@@ -331,4 +331,39 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button-link{
+   font-family:"Race Space", sans-serif;
+    color: #FCFFED;
+    text-decoration: none;
+}
+
+.button-link:hover{
+  color: #2D3A50;
+}
+
+/* Resume Dropdown*/
+/* Hide dropdown by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2D3A50;
+    border-style: solid;
+    border-color: #C0F2BB;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 10px;
+    font-family: "Coda", sans-serif;
+    z-index: 5;
+
+}
+
+.dropdown-content li a {
+    font-size: 20px;  /* or whatever size you want */
+}
+
+/* Show dropdown on hover of parent li */
+ul li:hover .dropdown-content {
+    display: block;
 }
