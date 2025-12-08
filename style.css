@@ -364,6 +364,6 @@ button{
 }
 
 /* Show dropdown on hover of parent li */
-ul li:hover .dropdown-content {
+#Navigation ul li:hover .dropdown-content {
     display: block;
 }
